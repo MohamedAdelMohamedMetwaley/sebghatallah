@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'hsn_ibtisamnormal';
+    /* src: url('hsn_ibtisam-webfont.woff2') format('woff2'),
+         url('hsn_ibtisam-webfont.woff') format('woff'); */
+    src: url(/public/style/HSN\ Ibtisam.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+    margin: 0;
+}
+
+/* ------ body -------- */
+body{
+    margin: 0;
+}
+body, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* ------ navbar -------- */
+nav {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav a{
+    cursor: pointer;
+    margin: 1px;
+    padding: 0px 20px;
+    background-color: #30928C;
+    transition: 0.2s;
+    opacity: 0.9;
+}
+nav a:hover{
+    background-color: #1d726d;
+    font-size: 21px;
+    opacity: 1;
+}
+
+/* ------ bot -------- */
+
+#bot{
+    height: 60px;
+    width: 60px;
+    position:fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: 0.2s;
+}
+#bot:hover{
+    bottom: 42px;
+}
+
+/* ------ من نحن؟ -------- */
+
+#about{
+    width: 70%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-rows: 2fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.about-img{
+    grid-row: span 2;
+    background-image: url(/public/images/من-نحن1.png);
+    height: 250px;
+    width: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}
+
+#about > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+li {
+    margin: 0;
+    padding: 5px 30px 0 0;
+    list-style: none;
+    background-image: url(/public/images/زخرف\ أخضر.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 25px;
+}
+/* ------ انجازاتنا -------- */
+
+#impact{
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+}
+.impact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.count, .impact-type{
+    margin: 0;
+    height: 25px;
+}
+.impact-type{
+    color: #666666;
+}
+.imp-icon{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: #30928C;
+    position: relative;
+}
+.imp-icon > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* ------ قالو عنا -------- */
+
+#testemonials{
+    margin-top: 50px;
+}
+
+/* ------ مجلة صبغة الله -------- */
+
+#mag{
+    margin-top: 150px;
+    text-align: center;
+}
+.mag-card{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.mag-card img{
+    border: 1px solid rgb(203, 194, 194);
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px 0px rgb(177, 173, 173);
+    transition: 0.3s;
+}
+.mag-card p {
+    color: #666666;
+}
+
+.mag-card img:hover{
+    box-shadow: 5px 5px 10px 0 #1d726d80;
+}
+
+.mags-container{
+    display: flex;
+    gap: 50px;
+}
+
+/* ------ حساباتنا -------- */
+
+#social-media{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ------ General -------- */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.hsn{
+    font-family: 'hsn_ibtisamnormal';
+}
+.sub-btn {
+    font-family: 'hsn_ibtisamnormal';
+    border-radius: 25px;
+    background-color: #A22E5F;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 22px;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+.sub-btn:hover{
+    background-color: #E64E8E;
+}
