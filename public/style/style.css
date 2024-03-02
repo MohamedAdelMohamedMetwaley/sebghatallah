@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'hsn_ibtisamnormal';
-    /* src: url('hsn_ibtisam-webfont.woff2') format('woff2'),
-         url('hsn_ibtisam-webfont.woff') format('woff'); */
-    src: url(/public/style/HSN\ Ibtisam.ttf) format('truetype');
+    src: url("../style/HSN_Ibtisam.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -67,9 +65,8 @@ nav a:hover{
 #about{
     width: 70%;
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    /* grid-template-rows: 2fr 1fr; */
     grid-template-columns: 1fr 1fr;
     font-size: 20px;
     margin-top: 100px;
@@ -172,6 +169,21 @@ li {
 .mags-container{
     display: flex;
     gap: 50px;
+}
+/* ------ إبداع أبناء الإسلام -------- */
+
+#innovation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+.innov-container{
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 /* ------ حساباتنا -------- */
