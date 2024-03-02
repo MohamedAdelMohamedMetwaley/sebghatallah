@@ -73,7 +73,7 @@ nav a:hover{
 }
 .about-img{
     grid-row: span 2;
-    background-image: url(/public/images/من-نحن1.png);
+    background-image: url("../images/من-نحن1.png");
     height: 250px;
     width: 250px;
     background-size: contain;
