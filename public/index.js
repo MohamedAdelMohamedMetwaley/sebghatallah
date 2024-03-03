@@ -15,17 +15,18 @@ const activateCounter = () => {
         let increment = Math.trunc(target / (target > speed? speed : (target / 10)));
         let delay = target > speed? 15 : 60;
         
-        if(count+increment > target){
+        if (count+5 > target){
             increment = 1;
         }
-        if (count < target) {
-        counter.innerText = count + increment;
-        setTimeout(updateCount, delay);
-        } else {
-        count.innerText = target;
+        else if(count+increment > target){
+            increment = 5;
         }
+        if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, delay);
+        } 
     };
-    updateCount();
+        updateCount();
     });
 }
 

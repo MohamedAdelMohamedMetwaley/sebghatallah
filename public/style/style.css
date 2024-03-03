@@ -53,12 +53,27 @@ nav a:hover{
     height: 60px;
     width: 60px;
     position:fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 50px;
+    right: 50px;
     transition: 0.2s;
+    animation-name: col;
+    animation-duration: 2s;
+}
+.bot-border {
+    height: 59px; 
+    width: 59px;
+    border-radius: 50%;
+    border: 1px solid #30928C!important;
+    animation-name: bord-pop;
+    animation-duration: 2s;
+    box-shadow: 2px 2px 5px #ccc, -2px -2px 5px #ccc;
+}
+#bot>img{
+    animation-name: bell-ring;
+    animation-duration: 2s;
 }
 #bot:hover{
-    bottom: 42px;
+    bottom: 52px;
 }
 
 /* ------ من نحن؟ -------- */
@@ -260,4 +275,89 @@ h1{
 }
 .sub-btn:hover{
     background-color: #E64E8E;
+}
+
+/* ------ Animations -------- */
+
+@keyframes bord-pop {
+
+
+    50% {
+
+        transform: scale(1.9);
+
+        opacity: 0.1;
+
+    }
+
+    100% {
+
+        transform: scale(1.9);
+
+        opacity: 0;
+
+    }
+
+}
+
+@keyframes col {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    10% {
+
+        transform: scale(1.1);
+
+    }
+
+    75% {
+
+        transform: scale(1);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+@keyframes bell-ring {
+
+    0% {
+
+        transform: translate(-50%, -50%);
+
+    }
+
+    5%, 15% {
+
+        transform: translate(-50%, -50%) rotate(5deg);
+
+    }
+
+    10%, 20% {
+
+        transform: translate(-50%, -50%) rotate(-5deg);
+
+    }
+
+    25%  {
+
+        transform: translate(-50%, -50%) rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: translate(-50%, -50%) rotate(0deg);
+
+    }
+
 }
