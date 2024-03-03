@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./public/style/style.css">
     <title>صبغة الله</title>
 </head>
+<!--TODO make the margins to the bottom of each section not the top of h1's -->
 <body dir="rtl">
 <img src="./public/images/pgcover.jpg" width="100%" alt="صبغة الله خلفية">
  <!-- ------ navbar --------  -->
@@ -23,17 +24,19 @@
 <main>
     <!--  ------ من نحن؟ --------  -->
     <div id="about">
-        <p class="about-img hsn">من نحن؟</p>
-        <div>
-            <p>برنامج صبغة الله هو برنامج تعليمي دعوي بإشراف الشيخ حسين عبد الرزاق، يهتم بأبناء الإسلام من سن ال4 سنوات إلى سن ال16، مقسمون إلى فئات.. بهدف تنشئتهم على قيم الإسلام والحفاظ على فطرتهم.</p>
-            <ul>
-                أعظم ما تسعى إليه هو أن يعي ابن الإسلام هذا الأمور:
-                <li>لماذا هو مسلم؟</li>
-                <li>ماذا يعني أنه مسلم لرب العالمين؟</li>
-                <li>كيف يعيش في الحياة الدنيا مسلمًا لله محسنًا؟</li>
-            </ul>
-            <a class="sub-btn" style="margin-top: 30px;" href="#">سجل الآن</a>
-        </div>
+      <h1>من نحن؟</h1>
+      <div>
+          <p>برنامج صبغة الله هو برنامج تعليمي دعوي بإشراف الشيخ حسين عبد الرزاق، يهتم بأبناء الإسلام من سن ال4 سنوات إلى سن ال16، مقسمون إلى فئات.. بهدف تنشئتهم على قيم الإسلام والحفاظ على فطرتهم.</p><br>
+          <ul>
+              أعظم ما تسعى إليه هو أن يعي ابن الإسلام هذا الأمور:
+              <li>لماذا هو مسلم؟</li>
+              <li>ماذا يعني أنه مسلم لرب العالمين؟</li>
+              <li>كيف يعيش في الحياة الدنيا مسلمًا لله محسنًا؟</li>
+          </ul>
+          <a class="sub-btn" style="margin-top: 30px;" href="#">سجل الآن</a>
+      </div>
+      <img src="" height="300px" width="250px" alt="شيخ وطالبه">
+
     </div>
     <!--  ------ انجازاتنا --------  -->
     <div class="hsn" id="impact">
@@ -60,97 +63,46 @@
     </div>
     <!-- ------ قالو عنا --------  -->
     <div id="testemonials">
-        <h1 class="hsn"><img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"> قالوا عنا <img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"></h1>
-        <button class="test-left">
-            <img src="./public/images/left-arrow.png" height="30px" alt="<-">
-        </button>
+        <h1><img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"> قالوا عنا <img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"></h1>
         <div class="test-container">
-            <div class="user1 upper-row test-card">
-                <div class="userdetails">
-                  <div class="imgbox">
-                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
-                  </div>
-                  <div class="detbox">
-                    <p class="name">أحمد جمال</p>
-                    <p class="designation">متخرج</p>
-                  </div>
-                </div>
+            <div class="test-card">
+                <p class="name">أحمد جمال</p>
                 <div class="review">
-                  <!-- <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4> -->
-                <p>“لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي ”</p>
+                <p>“ لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي ”</p>
                 </div>
-              </div>
-              <div class="user2 lower-row test-card">
-                <div class="userdetails">
-                    <div class="imgbox">
-                      <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
-                    </div>
-                    <div class="detbox">
-                      <p class="name">أحمد جمال</p>
-                      <p class="designation">متخرج</p>
-                    </div>
-                  </div>
-                  <div class="review">
-                    <!-- <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4> -->
-                  <p>“لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت نيولا باراياتيور.”</p>
-                  </div>
-                </div>
-                <div class="user3 upper-row test-card">
-                    <div class="userdetails">
-                      <div class="imgbox">
-                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
-                      </div>
-                      <div class="detbox">
-                        <p class="name">أحمد جمال</p>
-                        <p class="designation">متخرج</p>
-                      </div>
-                    </div>
-                    <div class="review">
-                      <!-- <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4> -->
-                    <p>“لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبورأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت نيولا باراياتيور.”</p>
-                    </div>
-                  </div>
-                  <div class="user4 lower-row test-card">
-                    <div class="userdetails">
-                        <div class="imgbox">
-                          <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
-                        </div>
-                        <div class="detbox">
-                          <p class="name">أحمد جمال</p>
-                          <p class="designation">متخرج</p>
-                        </div>
-                      </div>
-                      <div class="review">
-                        <!-- <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4> -->
-                      <p>“لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأاراياتيور. أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتات”</p>
-                      </div>
-                    </div>
-                    <div class="user5 upper-row test-card">
-                        <div class="userdetails">
-                          <div class="imgbox">
-                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
-                          </div>
-                          <div class="detbox">
-                            <p class="name">أحمد جمال</p>
-                            <p class="designation">متخرج</p>
-                          </div>
-                        </div>
-                        <div class="review">
-                          <!-- <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h4> -->
-                        <p>“لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبورأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت نيولا باراياتيور.”</p>
-                        </div>
-                      </div>
-                </div>
-                <button class="test-right">
-                    <img src="./public/images/right-arrow.png" height="30px" alt="->">
-                </button>
             </div>
+            <div class="test-card">
+              <p class="name">أحمد جمال</p>
+              <div class="review">
+              <p>“ لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي ”</p>
+              </div>
+            </div>
+            <div class="test-card">
+              <p class="name">أحمد جمال</p>
+              <div class="review">
+              <p>“ لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي ”</p>
+              </div>
+            </div>
+            <div class="test-card">
+              <p class="name">أحمد جمال</p>
+              <div class="review">
+              <p>“ لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي ”</p>
+              </div>
+            </div>
+            <div class="test-card">
+              <p class="name">أحمد جمال</p>
+              <div class="review">
+              <p>“ لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي ”</p>
+              </div>
+            </div>
+          </div>
+        </div>
             
         </div>
     </div>
     <!-- ------ مجلة صبغة الله --------  -->
     <div id="mag">
-        <h1 class="hsn"><img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"> مجلة صبغة الله <img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"></h1>
+        <h1><img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"> مجلة صبغة الله <img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"></h1>
         <button class="left">
             <img src="./public/images/left-arrow.png" height="30px" alt="<-">
         </button>
@@ -192,26 +144,28 @@
     </div>
     <!-- ------ انضم إلينا --------  -->
     <div id="join-us">
-
+      <img src="./public/images/pgcover.jpg" alt="">
+      <p>انضم لنا في برنامج صبغة الله تحت إشراف الشيخ حسين عبد الرزاق</p>
+      <a class="sub-btn" style="margin-top: 30px;" href="#">سجل الآن</a>
     </div>
     <!-- ------ إبداع أبناء الإسلام --------  -->
     <div id="innovation">
-        <h1 class="hsn"><img src="./public/images/زخرف أخضر.png" height="20px" alt="-:"> إبداع أبناء الإسلام <img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"></h1>
+        <h1><img src="./public/images/زخرف أخضر.png" height="20px" alt="-:"> إبداع أبناء الإسلام <img src="./public/images/زخرف أخضر.png" height="20px" alt=":-"></h1>
         <div class="innov-container">
             <div>
                 <p>تنمية مهارات الأبناء هي أحد أولوياتنا في برنامج صبغة الله لذا قمنا بإنشاء معرضا لإبداعات أبنائنا يمكنكم الانضمام له من هنا</p>
                 <a class="sub-btn" style="margin-top: 30px;" href="#">معرض إبداع الأبناء</a>
             </div>
-            <img src="" height="300px" width="250px" alt="kid-drawing">
+            <img src="./public/images/kids-drawing.jpg" height="300px" style="border-radius: 25px;opacity: 0.9;" alt="kid-drawing">
         </div>
     </div>
 </main>
 <!-- ------ حساباتنا --------  -->
 <footer><div id="social-media">
-    <a href=""><img src="./public/images/telegram2.png" height="40px" alt="telegram"></a>
-    <a href=""><img src="./public/images/facebook2.png" height="40px" alt="facebook"></a>
-    <a href=""><img src="./public/images/instagram2.png" height="40px" alt="instagram"></a>
-    <a href=""><img src="./public/images/youtube.png" height="40px" alt="youtube"></a>
+    <a href=""><img src="./public/images/telegram2.png" height="30px" alt="telegram"></a>
+    <a href=""><img src="./public/images/facebook2.png" height="30px" alt="facebook"></a>
+    <a href=""><img src="./public/images/instagram2.png" height="30px" alt="instagram"></a>
+    <a href=""><img src="./public/images/youtube.png" height="30px" alt="youtube"></a>
 </div></footer>
 </body>
 <script src="./public/index.js">
