@@ -7,13 +7,14 @@
 html{
     scroll-behavior: smooth;
     scroll-padding: 10rem;
+}
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 /* ------ body -------- */
-body{
-    margin: 0;
-}
 body, main{
     display: flex;
     flex-direction: column;
@@ -221,6 +222,10 @@ li {
     align-items: center;
     justify-items: center;
 }
+.innov-container p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
 
 /* ------ حساباتنا -------- */
 
@@ -236,6 +241,9 @@ li {
 a{
     text-decoration: none;
     color: black;
+}
+h1{
+    margin-top: 70px;
 }
 .hsn{
     font-family: 'hsn_ibtisamnormal';

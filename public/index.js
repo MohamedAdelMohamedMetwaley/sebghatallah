@@ -1,4 +1,33 @@
 const navButtons = document.querySelectorAll("nav a");
+const counters = document.querySelectorAll('.count');
+const speed = 100;
+
+const observer = new IntersectionObserver((entries) => {
+    if(entries[0].isIntersecting)
+        activateCounter();
+})
+observer.observe(document.querySelector(".count"));
+const activateCounter = () => {
+    counters.forEach((counter) => {
+    const updateCount = () => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const count = parseInt(counter.innerText);
+        let increment = Math.trunc(target / (target > speed? speed : (target / 10)));
+        let delay = target > speed? 15 : 60;
+        
+        if(count+increment > target){
+            increment = 1;
+        }
+        if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, delay);
+        } else {
+        count.innerText = target;
+        }
+    };
+    updateCount();
+    });
+}
 
 navButtons.forEach((btn) => {
     btn.addEventListener("click", (event) => {
