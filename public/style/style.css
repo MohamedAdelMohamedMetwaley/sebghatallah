@@ -54,7 +54,7 @@ nav a:hover{
     height: 60px;
     width: 60px;
     position:fixed;
-    bottom: 50px;
+    bottom: 70px;
     right: 50px;
     transition: 0.2s;
     animation-name: col;
@@ -75,7 +75,7 @@ nav a:hover{
     animation-duration: 2s;
 }
 #bot:hover{
-    bottom: 52px;
+    bottom: 72px;
 }
 
 /* ------ من نحن؟ -------- */
@@ -299,13 +299,30 @@ li {
 }
 
 /* ------ حساباتنا -------- */
-
-#social-media{
+footer{
     display: flex;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    width: 100%;
 }
+footer > div, footer > a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 30px;
+}
+.email-parent{
+    font-size: 17px;
+}
+.email-parent:hover > .email, #social-media > a:hover{
+    animation-name: bell-ring-no-trans;
+    animation-duration: 2s;
+}
+.email-parent:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
 
 /* ------ General -------- */
 
@@ -417,5 +434,30 @@ button[disabled=true] img{
         transform: translate(-50%, -50%) rotate(0deg);
 
     }
+}
+@keyframes bell-ring-no-trans {
 
+    5%, 15% {
+
+        transform: rotate(10deg);
+
+    }
+
+    10%, 20% {
+
+        transform: rotate(-10deg);
+
+    }
+
+    25%  {
+
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: rotate(0deg);
+
+    }
 }
