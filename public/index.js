@@ -38,9 +38,13 @@ navButtons.forEach((btn) => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const scrollImages = document.querySelector(".mags-container");
+    const scrollTestm = document.querySelector(".test-container");
     const scrollLength = scrollImages.scrollWidth - scrollImages.clientWidth;
+    const scrollTestmLength = scrollTestm.scrollWidth - scrollTestm.clientWidth;
     const leftButton = document.querySelector(".left");
     const rightButton = document.querySelector(".right");
+    const leftTestm = document.querySelector(".test-left");
+    const rightTestm = document.querySelector(".test-right");
 
     function checkScroll() {
         const currentScroll = scrollImages.scrollLeft;
@@ -55,13 +59,16 @@ document.addEventListener("DOMContentLoaded", function () {
             rightButton.removeAttribute("disabled");
         }
     }
-    
+    leftButton.addEventListener("click", leftScroll)
+    rightButton.addEventListener("click", rightScroll)
+    // leftTestm.addEventListener("click", leftScroll)
+    // rightTestm.addEventListener("click", rightScroll)
     scrollImages.addEventListener("scroll", checkScroll);
+    // scrollTestm.addEventListener("scroll", checkScroll);
     window.addEventListener("resize", checkScroll);
     checkScroll();
     
     function leftScroll() {
-        console.log("scroll left");
         scrollImages.scrollBy({
         left: -400,
         behavior: "smooth"
