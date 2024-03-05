@@ -602,10 +602,14 @@ button[disabled=true] img{
         background: #30928C; 
     }
     #join-us{
-        font-size: 4vw;
+        font-size: 4.2vw;
         width: 100%;
         height: 30vh;
         overflow-x: hidden;
+    }
+    #join-us > p{
+        text-align: center;
+        width: 95%;
     }
     #join-us > a{
         font-size: 4.2vw;
