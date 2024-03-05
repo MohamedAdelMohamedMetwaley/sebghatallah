@@ -82,18 +82,18 @@ nav a:hover{
 /* ------ من نحن؟ -------- */
 
 #about{
-    width: 70%;
+    width: 75%;
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
     font-size: 1.3vw;
-    margin: 70px 0;
+    margin: 50px 0;
 }
 #about > h1{
     grid-row-start: 1;
-    grid-column: span 2;
+    grid-column: span 3;
     margin-bottom: 20px;
 }
 
@@ -102,10 +102,12 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    grid-column: span 2;
 }
 #about > img{
     border-radius: 15px;
-    width: 65%;
+    width: 90%;
+    height: auto;
     border: 5px #30928C;
     border-style: ridge;
 }
@@ -156,7 +158,7 @@ li {
 }
 /* ------ قالو عنا -------- */
 
-#testemonials{
+#testimonials{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -222,7 +224,7 @@ li {
 .mag-card{
     margin-top: 50px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.3vw;
     display: inline-block;
 }
 .mag-card img{
@@ -279,7 +281,6 @@ li {
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 1.6vw;
 }
 /* ------ انضم إلينا -------- */
 
@@ -290,14 +291,17 @@ li {
     position: relative;
     background-color: #000000c8;
     margin: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
     color: white;
     font-size: 1.6vw;
     font-weight: bold;
-    flex: 0 0 auto;
+}
+
+#join-us > a{
+    position: absolute;
+    bottom: 15%;
 }
 
 #join-us > img{
@@ -339,7 +343,7 @@ footer > div, footer > a{
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: 20px 1.5vw;
+    margin: 10px 1.5vw;
 }
 footer a > img{
     max-height: 30px;
@@ -397,6 +401,81 @@ h1{
 }
 button[disabled=true] img{
     opacity: 0;
+}
+/* media-quiries */
+
+@media (max-width: 1024px){
+    h1{
+        font-size: 4.5vw;
+    }
+    nav, #about, .test-card > .name, .mag-card{
+        font-size: 2.2vw;
+    }  
+    .review p, .email-parent {
+        font-size: 2vw;
+    }
+    nav a:hover, .impact-card, .innov-container p, .sub-btn{
+        font-size: 2.4vw;
+    }
+    .count, .impact-type{
+        height: 2.4vw;
+    }
+    li{
+        background-size: 2.4vw;
+    }
+    #join-us{
+        font-size: 2.5vw;
+    }
+    #bot, .bot-border{
+        height: 7vw;
+        width: 7vw;
+    }
+    #about > img{
+        width: 100%;
+    }
+    .imp-icon {
+        height: 7vw;
+        width: 7vw;
+    }
+    .imp-icon > img{
+        height: 4.5vw;
+    }
+    .test-card > img{
+        width: 30%;
+    }
+    #join-us > a{
+        bottom: 10%;
+        font-size: 2.2vw;
+    }
+    footer a > img{
+        width: 3vw;
+    }
+    
+}
+@media (max-width: 768px){
+    #about, #impact, #testimonials, #mag, #join-us, #innovation{
+        margin: 40px 0;
+    }
+    .test-container{
+        width: 75%;
+    }
+    .left{
+        left: 5%;
+    }
+    .left-testm{
+        left: 10%;
+    }
+    .right-testm{
+        right: 10%;
+    }
+}
+@media (max-width: 500px){
+    #about, #impact, #testimonials, #mag, #join-us, #innovation{
+        margin: 40px 0;
+    }
+    .left{
+        left: 5%;
+    }
 }
 /* ------ Animations -------- */
 
