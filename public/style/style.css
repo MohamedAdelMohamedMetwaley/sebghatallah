@@ -21,8 +21,7 @@ body, main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    
+    width: 100%;   
 }
 /* ------ navbar -------- */
 nav {
@@ -222,7 +221,7 @@ li {
     margin-top: 0;
 }
 .mag-card{
-    margin-top: 50px;
+    margin: 50px 25px 0 25px;
     font-weight: bold;
     font-size: 1.3vw;
     display: inline-block;
@@ -243,7 +242,6 @@ li {
 
 .mags-container{
     display: flex;
-    gap: 50px;
     width: 70%;
     flex-wrap: nowrap;
     overflow-x:scroll;
@@ -423,9 +421,6 @@ button[disabled=true] img{
     li{
         background-size: 2.4vw;
     }
-    #join-us{
-        font-size: 2.5vw;
-    }
     #bot, .bot-border{
         height: 7vw;
         width: 7vw;
@@ -446,6 +441,9 @@ button[disabled=true] img{
     .mag-card img{
         height: 200px;
     }
+    #join-us{
+        font-size: 2.5vw;
+    }
     #join-us > a{
         bottom: 10%;
         font-size: 2.2vw;
@@ -464,7 +462,9 @@ button[disabled=true] img{
     }
     .mags-container{
         width: 85%;
-        gap: 30px;
+    }
+    .mag-card{
+        margin: 50px 15px 0 15px;
     }
     .left{
         left: 1%;
@@ -479,24 +479,91 @@ button[disabled=true] img{
         right: 10%;
     }
 }
-@media (max-width: 500px){
-    nav{
-        font-size: 3.5vw;
-    } 
-    #about, .test-card > .name, .mag-card{
-        font-size: 3vw;
+@media (max-width: 550px){
+    h1{
+        font-size: 7.5vw;
     }
+    #about, .test-card > .name, .mag-card{
+        font-size: 4vw;
+    }
+    nav a:hover, .impact-card, .innov-container p, .sub-btn{
+        font-size: 4.8vw;
+    }
+    .review p, .email-parent {
+        font-size: 4vw;
+    }
+    .count, .impact-type{
+        height: 4.8vw;
+    }
+    li{
+        background-size: 4.4vw;
+    }
+    nav{
+        font-size: 4vw;
+    } 
     nav a {
-        padding: 0 10px;
+        padding: 0 5px;
+    }
+    #bot, .bot-border{
+        height: 12vw;
+        width: 12vw;
+    }
+    #bot > img{
+        height: 8vw;
+        width: 8vw;
+    }
+    #bot{
+        bottom: 12vw;
+        right: 5vw;
     }
     #about{
-        width: 96%;
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    #about> div{
+        grid-row-start: 3;
+    }
+    #about > img{
+        width: 75%;
+    }
+    #impact {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        row-gap: 40px;
+        column-gap: 0px;
+    }
+    .imp-icon {
+        height: 16vw;
+        width: 16vw;
+    }
+    .imp-icon > img{
+        height: 10vw;
+    }
+    .test-container{
+        width: 85%;
+    }
+    .left-testm{
+        left: 4%;
+    }
+    .right-testm{
+        right: 3%;
+    }
+    #mag{
+        width: 100%;
     }
     .mags-container{
-        width: 100%;
+        width: 90%;
         -ms-overflow-style:unset;  /* Internet Explorer 10+ */
         scrollbar-width: initial;  /* Firefox */
         padding-bottom: 15px;
+    }
+    .mag-card img{
+        height: 180px;
     }
     .left{
         display: none;
@@ -525,6 +592,37 @@ button[disabled=true] img{
     /* Handle on hover */
     .mags-container::-webkit-scrollbar-thumb:hover {
         background: #30928C; 
+    }
+    #join-us{
+        font-size: 4vw;
+        width: 100%;
+        height: 30vh;
+        overflow-x: hidden;
+    }
+    #join-us > a{
+        font-size: 4.2vw;
+    }
+    #join-us > img{
+        width: min-content;
+        height: 30vh;
+    }
+    .innov-container{
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1 1 1;
+        row-gap: 15px;
+    }
+    .innov-container > div{
+        grid-row-start: 3;
+    }
+    .innov-container p {
+        margin-bottom: 15px;
+    }
+    footer a > img {
+        width: 6.5vw;
+    }
+    footer > div, footer > a{
+        gap: 10px;
     }
 }
 /* ------ Animations -------- */
