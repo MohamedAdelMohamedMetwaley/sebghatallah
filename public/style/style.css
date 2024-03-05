@@ -502,7 +502,7 @@ button[disabled=true] img{
         font-size: 4vw;
     } 
     nav a {
-        padding: 0 5px;
+        padding: 0 3px;
     }
     #bot, .bot-border{
         height: 12vw;
