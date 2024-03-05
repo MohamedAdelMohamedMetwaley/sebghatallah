@@ -7,6 +7,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding: 10rem;
+    overflow-x: hidden;
 }
 * {
     box-sizing: border-box;
@@ -51,8 +52,8 @@ nav a:hover{
 /* ------ bot -------- */
 
 #bot{
-    height: 60px;
-    width: 60px;
+    height: 4.2vw;
+    width: 4.2vw;
     position:fixed;
     bottom: 4.5vw;
     right: 4vw;
@@ -62,8 +63,8 @@ nav a:hover{
     z-index: 1;
 }
 .bot-border {
-    height: 59px; 
-    width: 59px;
+    height: 4.15vw; 
+    width: 4.15vw;
     border-radius: 50%;
     border: 1px solid #30928C!important;
     animation-name: bord-pop;
@@ -192,11 +193,16 @@ li {
     margin-bottom: 0.1rem;
     font-weight: 600;
 }
+.test-card > img{
+    width: 15%;
+    height: auto;
+}
 
 .review p {
     color: #555555;
     font-weight: 500;
     line-height: 1.5;
+    font-size: 1.2vw;
 }
 
 /* ------ مجلة صبغة الله -------- */
@@ -250,22 +256,22 @@ li {
 }
 .left{
     position: absolute;
-    left: 100px;
+    left: 10%;
     top: 55%;
 }
 .left-testm{
     position: absolute;
-    left: 350px;
+    left: 22%;
     top: 60%;
 }
 .right-testm{
     position: absolute;
-    right: 350px;
+    right: 22%;
     top: 60%;
 }
 .right {
     position: absolute;
-    right: 110px;
+    right: 10%;
     top: 55%;
 }
 .right, .left, .left-testm, .right-testm{
@@ -312,13 +318,14 @@ li {
 .innov-container{
     display: grid;
     width: 80%;
+    column-gap: 50px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
     margin-top: 50px ;
 }
 .innov-container p{
-    font-size: 20px;
+    font-size: 1.4vw;
     margin-bottom: 50px;
 }
 
@@ -332,10 +339,15 @@ footer > div, footer > a{
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: 20px 30px;
+    margin: 20px 1.5vw;
+}
+footer a > img{
+    max-height: 30px;
+    width: 2vw;
+    height: auto;
 }
 .email-parent{
-    font-size: 17px;
+    font-size: 1.2vw;
 }
 .email-parent:hover > .email{
     animation-name: bell-ring-no-trans;
