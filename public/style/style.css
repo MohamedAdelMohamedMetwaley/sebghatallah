@@ -87,7 +87,7 @@ nav a:hover{
     align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr;
-    font-size: 20px;
+    font-size: 1.3vw;
     margin: 70px 0;
 }
 #about > h1{
@@ -104,7 +104,7 @@ nav a:hover{
 }
 #about > img{
     border-radius: 15px;
-    height: 350px;
+    width: 65%;
     border: 5px #30928C;
     border-style: ridge;
 }
@@ -115,13 +115,13 @@ li {
     background-image: url(/public/images/زخرف\ أخضر.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 25px;
+    background-size: 1.4vw;
 }
 /* ------ انجازاتنا -------- */
 
 #impact{
     display: flex;
-    gap: 100px;
+    gap: 7vw;
     margin: 50px 0;
 }
 .impact-card{
@@ -130,23 +130,24 @@ li {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.4vw;
 }
 .count, .impact-type{
     margin: 0;
-    height: 25px;
+    height: 1.4vw;
 }
 .impact-type{
     color: #666666;
 }
 .imp-icon{
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 4.5vw;
+    width: 4.5vw;
     background-color: #30928C;
     position: relative;
 }
 .imp-icon > img{
+    height: 2.8vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -187,7 +188,7 @@ li {
 
 .test-card > .name {
     color: #333333;
-    font-size: 1.2rem;
+    font-size: 1.3vw;
     margin-bottom: 0.1rem;
     font-weight: 600;
 }
@@ -202,6 +203,7 @@ li {
 
 #mag{
     margin: 50px 0;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,13 +273,14 @@ li {
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 1.6vw;
 }
 /* ------ انضم إلينا -------- */
 
 #join-us{
-    width: 100%;
-    height: 320px;
+    --div-width: 99vw;
+	width: var(--div-width);
+	height: calc(var(--div-width) * 1/4.75);
     position: relative;
     background-color: #000000c8;
     margin: 50px 0;
@@ -286,8 +289,9 @@ li {
     align-items:center;
     justify-content:center;
     color: white;
-    font-size: 25px;
+    font-size: 1.6vw;
     font-weight: bold;
+    flex: 0 0 auto;
 }
 
 #join-us > img{
@@ -303,11 +307,11 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center; 
-    margin: 50px;
+    margin: 50px 0;
 }
 .innov-container{
     display: grid;
-    width: 70%;
+    width: 80%;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
@@ -341,7 +345,7 @@ footer > div, footer > a{
     transition: 0.4s;
 }
 #social-media > a:hover
- {
+{
     transform: scale(1.1);
 }
 .email-parent:hover{
@@ -351,6 +355,11 @@ footer > div, footer > a{
 
 /* ------ General -------- */
 
+.responsive-img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
 a{
     text-decoration: none;
     color: black;
@@ -367,7 +376,7 @@ h1{
     background-color: #A22E5F;
     color: #ffffff;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 1.4vw;
     padding: 0 20px;
     transition: 0.3s;
 }

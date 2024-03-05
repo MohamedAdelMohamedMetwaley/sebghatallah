@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const leftTestm = document.querySelector(".left-testm");
     const rightTestm = document.querySelector(".right-testm");
     console.log("scrollImages: ", scrollImages.clientWidth, ", ", scrollImages.scrollWidth);
-    leftButton.addEventListener("click", () => leftScroll(scrollImages, 400))
-    rightButton.addEventListener("click",  () => rightScroll(scrollImages, 400))
+    leftButton.addEventListener("click", () => leftScroll(scrollImages, scrollImages.clientWidth+20))
+    rightButton.addEventListener("click",  () => rightScroll(scrollImages, scrollImages.clientWidth+20))
     leftTestm.addEventListener("click", () => leftScroll(scrollTestm, scrollTestm.clientWidth+20))
     rightTestm.addEventListener("click",  () => rightScroll(scrollTestm, scrollTestm.clientWidth+20))
     
