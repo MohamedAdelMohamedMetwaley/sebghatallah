@@ -443,6 +443,9 @@ button[disabled=true] img{
     .test-card > img{
         width: 30%;
     }
+    .mag-card img{
+        height: 200px;
+    }
     #join-us > a{
         bottom: 10%;
         font-size: 2.2vw;
@@ -459,8 +462,15 @@ button[disabled=true] img{
     .test-container{
         width: 75%;
     }
+    .mags-container{
+        width: 85%;
+        gap: 30px;
+    }
     .left{
-        left: 5%;
+        left: 1%;
+    }
+    .right{
+        right: 1%;
     }
     .left-testm{
         left: 10%;
@@ -470,11 +480,51 @@ button[disabled=true] img{
     }
 }
 @media (max-width: 500px){
-    #about, #impact, #testimonials, #mag, #join-us, #innovation{
-        margin: 40px 0;
+    nav{
+        font-size: 3.5vw;
+    } 
+    #about, .test-card > .name, .mag-card{
+        font-size: 3vw;
+    }
+    nav a {
+        padding: 0 10px;
+    }
+    #about{
+        width: 96%;
+    }
+    .mags-container{
+        width: 100%;
+        -ms-overflow-style:unset;  /* Internet Explorer 10+ */
+        scrollbar-width: initial;  /* Firefox */
+        padding-bottom: 15px;
     }
     .left{
-        left: 5%;
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .mags-container::-webkit-scrollbar {
+        display:initial;  /* Safari and Chrome */
+        width: 10px;
+        margin-top: 50px;
+      }
+      
+      /* Track */
+    .mags-container::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    .mags-container::-webkit-scrollbar-thumb {
+        background: #1d726d; 
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    .mags-container::-webkit-scrollbar-thumb:hover {
+        background: #30928C; 
     }
 }
 /* ------ Animations -------- */
