@@ -283,11 +283,13 @@ li {
 /* ------ انضم إلينا -------- */
 
 #join-us{
-    --div-width: 99vw;
-	width: var(--div-width);
-	height: calc(var(--div-width) * 1/4.75);
     position: relative;
-    background-color: #000000c8;
+    width: 100%;
+    background: linear-gradient(0deg,#000000b3,#000000b3),url(/public/images/pgcover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
     margin: 50px 0;
     display: grid;
     align-items: center;
@@ -518,6 +520,9 @@ button[disabled=true] img{
     #bot{
         bottom: 12vw;
         right: 5vw;
+    }
+    #bot:hover{
+        bottom: 13vw;
     }
     #about{
         width: 90%;
