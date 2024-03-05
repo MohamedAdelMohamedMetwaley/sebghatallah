@@ -341,7 +341,7 @@ footer > div, footer > a{
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: 10px 1.5vw;
+    margin: 10px 3vw;
 }
 footer a > img{
     max-height: 30px;
@@ -489,8 +489,11 @@ button[disabled=true] img{
     nav a:hover, .impact-card, .innov-container p, .sub-btn{
         font-size: 4.8vw;
     }
-    .review p, .email-parent {
+    .review p{
         font-size: 4vw;
+    }
+    .email-parent {
+        font-size: 3.8vw;
     }
     .count, .impact-type{
         height: 4.8vw;
@@ -622,7 +625,7 @@ button[disabled=true] img{
         width: 6.5vw;
     }
     footer > div, footer > a{
-        gap: 10px;
+        gap: 8px;
     }
 }
 /* ------ Animations -------- */
