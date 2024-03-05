@@ -26,7 +26,7 @@ body, main{
 /* ------ navbar -------- */
 nav {
     display: flex;
-    font-size: 20px;
+    font-size: 1.3vw;
     justify-content: center;
     margin-top: 1px;
     position: sticky;
@@ -44,7 +44,7 @@ nav a{
 }
 nav a:hover{
     background-color: #1d726d;
-    font-size: 21px;
+    font-size: 1.4vw;
     opacity: 1;
 }
 
@@ -54,8 +54,8 @@ nav a:hover{
     height: 60px;
     width: 60px;
     position:fixed;
-    bottom: 70px;
-    right: 50px;
+    bottom: 4.5vw;
+    right: 4vw;
     transition: 0.2s;
     animation-name: col;
     animation-duration: 2s;
@@ -75,7 +75,7 @@ nav a:hover{
     animation-duration: 2s;
 }
 #bot:hover{
-    bottom: 72px;
+    bottom: 4.7vw;
 }
 
 /* ------ من نحن؟ -------- */
@@ -101,6 +101,12 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+#about > img{
+    border-radius: 15px;
+    height: 350px;
+    border: 5px #30928C;
+    border-style: ridge;
 }
 li {
     margin: 0;
@@ -153,8 +159,8 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     position: relative;
+    width: 100%;
     margin: 50px 0;
 }
 .test-container{
@@ -162,29 +168,34 @@ li {
 	margin: 1rem;
     padding: 1rem;
 	display: flex;
-	gap: 2rem;
-    width: 85%;
+	gap: 50px;
+    width: 50%;
+    flex-wrap: nowrap;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 .test-card {
+    display: inline-block;
 	padding: 1rem 2rem;
     border-radius: 0.8rem;
     box-shadow: 5px 5px 20px #1d726d80;
     border: 1px solid rgb(203, 194, 194);
-    height: fit-content;
+    width: 100%;
+    flex: 0 0 auto;
 }
 
 .test-card > .name {
-	color: #333333;
-    font-size: 0.9rem;
+    color: #333333;
+    font-size: 1.2rem;
     margin-bottom: 0.1rem;
     font-weight: 600;
 }
 
 .review p {
-    color: #777777;
+    color: #555555;
     font-weight: 500;
     line-height: 1.5;
-    margin-top: 10px;
 }
 
 /* ------ مجلة صبغة الله -------- */
@@ -224,7 +235,6 @@ li {
     display: flex;
     gap: 50px;
     width: 70%;
-    position: relative;
     flex-wrap: nowrap;
     overflow-x:scroll;
     overflow-y: hidden;
@@ -241,12 +251,22 @@ li {
     left: 100px;
     top: 55%;
 }
-.right{
+.left-testm{
+    position: absolute;
+    left: 350px;
+    top: 60%;
+}
+.right-testm{
+    position: absolute;
+    right: 350px;
+    top: 60%;
+}
+.right {
     position: absolute;
     right: 110px;
     top: 55%;
 }
-.right, .left{
+.right, .left, .left-testm, .right-testm{
     background-color: transparent;
     border: none;
     outline: none;
@@ -307,22 +327,27 @@ footer{
 footer > div, footer > a{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     margin: 20px 30px;
 }
 .email-parent{
     font-size: 17px;
 }
-.email-parent:hover > .email, #social-media > a:hover{
+.email-parent:hover > .email{
     animation-name: bell-ring-no-trans;
     animation-duration: 2s;
+}
+#social-media > a{
+    transition: 0.4s;
+}
+#social-media > a:hover
+ {
+    transform: scale(1.1);
 }
 .email-parent:hover{
     text-decoration: underline;
     color: blue;
 }
-
-
 
 /* ------ General -------- */
 

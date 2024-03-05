@@ -39,45 +39,26 @@ navButtons.forEach((btn) => {
 document.addEventListener("DOMContentLoaded", function () {
     const scrollImages = document.querySelector(".mags-container");
     const scrollTestm = document.querySelector(".test-container");
-    const scrollLength = scrollImages.scrollWidth - scrollImages.clientWidth;
-    const scrollTestmLength = scrollTestm.scrollWidth - scrollTestm.clientWidth;
     const leftButton = document.querySelector(".left");
     const rightButton = document.querySelector(".right");
-    const leftTestm = document.querySelector(".test-left");
-    const rightTestm = document.querySelector(".test-right");
-
-    function checkScroll() {
-        const currentScroll = scrollImages.scrollLeft;
-        if (currentScroll === 0) {
-            rightButton.setAttribute("disabled", "true");
-            leftButton.removeAttribute("disabled");
-        } else if (currentScroll === scrollLength) {
-            leftButton.setAttribute("disabled", "true");
-            rightButton.removeAttribute("disabled");
-        } else {
-            leftButton.removeAttribute("disabled");
-            rightButton.removeAttribute("disabled");
-        }
-    }
-    leftButton.addEventListener("click", leftScroll)
-    rightButton.addEventListener("click", rightScroll)
-    // leftTestm.addEventListener("click", leftScroll)
-    // rightTestm.addEventListener("click", rightScroll)
-    scrollImages.addEventListener("scroll", checkScroll);
-    // scrollTestm.addEventListener("scroll", checkScroll);
-    window.addEventListener("resize", checkScroll);
-    checkScroll();
+    const leftTestm = document.querySelector(".left-testm");
+    const rightTestm = document.querySelector(".right-testm");
+    console.log("scrollImages: ", scrollImages.clientWidth, ", ", scrollImages.scrollWidth);
+    leftButton.addEventListener("click", () => leftScroll(scrollImages, 400))
+    rightButton.addEventListener("click",  () => rightScroll(scrollImages, 400))
+    leftTestm.addEventListener("click", () => leftScroll(scrollTestm, scrollTestm.clientWidth+20))
+    rightTestm.addEventListener("click",  () => rightScroll(scrollTestm, scrollTestm.clientWidth+20))
     
-    function leftScroll() {
-        scrollImages.scrollBy({
-        left: -400,
+    function leftScroll(scroller, speed) {
+        scroller.scrollBy({
+        left: -speed,
         behavior: "smooth"
         });
     }
     
-    function rightScroll() {
-        scrollImages.scrollBy({
-        left: 400,
+    function rightScroll(scroller, speed) {
+        scroller.scrollBy({
+        left: speed,
         behavior: "smooth"
         });
     }
