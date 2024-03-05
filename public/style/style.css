@@ -626,11 +626,16 @@ button[disabled=true] img{
     .innov-container p {
         margin-bottom: 15px;
     }
-    footer a > img {
-        width: 6.5vw;
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    footer > div, footer > a{
-        gap: 8px;
+    footer a > img {
+        width: 7.5vw;
+    }
+    footer > div{
+        gap: 15px;
     }
 }
 /* ------ Animations -------- */
