@@ -88,12 +88,11 @@ nav a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
     font-size: 1.3vw;
-    margin: 50px 0;
+    margin: 25px 0;
 }
 #about > h1{
     grid-row-start: 1;
     grid-column: span 3;
-    margin-bottom: 20px;
 }
 
 #about > div{
@@ -111,7 +110,6 @@ nav a:hover{
     border-style: ridge;
 }
 li {
-    margin: 0;
     padding: 5px 30px 0 0;
     list-style: none;
     background-image: url("../images/زخرف\ أخضر.png");
@@ -124,7 +122,7 @@ li {
 #impact{
     display: flex;
     gap: 7vw;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 .impact-card{
     display: flex;
@@ -135,7 +133,6 @@ li {
     font-size: 1.4vw;
 }
 .count, .impact-type{
-    margin: 0;
     height: 1.4vw;
 }
 .impact-type{
@@ -149,7 +146,8 @@ li {
     position: relative;
 }
 .imp-icon > img{
-    height: 2.8vw;
+    /* height: 2.8vw; */
+    height: 65%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -158,13 +156,12 @@ li {
 /* ------ قالو عنا -------- */
 
 #testimonials{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     width: 100%;
-    margin: 50px 0;
+    margin: 25px 0;
 }
 .test-container{
     transform: scale(0.9);
@@ -209,7 +206,7 @@ li {
 /* ------ مجلة صبغة الله -------- */
 
 #mag{
-    margin: 50px 0;
+    margin: 25px 0;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -217,11 +214,8 @@ li {
     text-align: center;
     position: relative;
 }
-#mag h1{
-    margin-top: 0;
-}
 .mag-card{
-    margin: 50px 25px 0 25px;
+    margin: 30px 25px 0 25px;
     font-weight: bold;
     font-size: 1.3vw;
     display: inline-block;
@@ -290,7 +284,7 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-    margin: 50px 0;
+    margin: 25px 0;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -317,7 +311,8 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center; 
-    margin: 50px 0;
+    gap: 25px;
+    margin: 25px 0;
 }
 .innov-container{
     display: grid;
@@ -326,7 +321,6 @@ li {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    margin-top: 50px ;
 }
 .innov-container p{
     font-size: 1.4vw;
@@ -389,7 +383,7 @@ h1{
 .sub-btn {
     font-family: 'hsn_ibtisamnormal';
     border-radius: 25px;
-    background-color: #A22E5F;
+    background-color: #E64E8E;
     color: #ffffff;
     font-weight: normal;
     font-size: 1.4vw;
@@ -397,7 +391,7 @@ h1{
     transition: 0.3s;
 }
 .sub-btn:hover{
-    background-color: #E64E8E;
+    background-color: #A22E5F;
 }
 button[disabled=true] img{
     opacity: 0;
@@ -466,7 +460,7 @@ button[disabled=true] img{
         width: 85%;
     }
     .mag-card{
-        margin: 50px 15px 0 15px;
+        margin: 25px 15px 0 15px;
     }
     .left{
         left: 1%;
