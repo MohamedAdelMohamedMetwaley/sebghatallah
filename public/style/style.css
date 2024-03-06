@@ -104,7 +104,8 @@ nav a:hover{
 }
 #about > img{
     border-radius: 15px;
-    width: 90%;
+    /* width: 90%; */
+    height: 100%;
     height: auto;
     border: 5px #30928C;
     border-style: ridge;
@@ -527,7 +528,7 @@ button[disabled=true] img{
         grid-row-start: 3;
     }
     #about > img{
-        width: 75%;
+        width: 90%;
     }
     #impact {
         display: grid;
