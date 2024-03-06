@@ -500,6 +500,7 @@ button[disabled=true] img{
     }
     nav{
         font-size: 4vw;
+        width: 100%;
     } 
     nav a {
         padding: 0 3px;
