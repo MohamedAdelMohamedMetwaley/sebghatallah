@@ -497,6 +497,9 @@ button[disabled="true"] img {
     width: 75%;
     height: 400px;
   }
+  .sub-btn {
+    align-self: center;
+  }
   .mags-container {
     width: 85%;
   }

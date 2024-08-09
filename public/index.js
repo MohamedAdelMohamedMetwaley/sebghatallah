@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function scrollTestm(direction, testmArr) {
-    console.log(direction, testmArr, currentTestm);
     if (direction === "left") {
       testmArr[currentTestm].classList.remove("active");
       if (currentTestm === testmArr.length - 1) currentTestm = -1;
