@@ -413,7 +413,7 @@ h1 {
   transition: 0.3s;
 }
 .sub-btn:hover {
-  background-color: #a22e5f;
+  background-color: #8e1648;
 }
 button[disabled="true"] img {
   opacity: 0;

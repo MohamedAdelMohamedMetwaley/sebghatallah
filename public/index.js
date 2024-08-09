@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const rightTestm = document.querySelector(".right-testm");
 
   testmCards[currentTestm].classList.add("active");
-  console.log(testmCards);
 
   leftButton.addEventListener("click", () =>
     leftScroll(scrollImages, scrollImages.clientWidth + 20)
