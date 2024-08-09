@@ -167,6 +167,9 @@ li {
   width: 100%;
   margin: 25px 0;
 }
+#testimonials h1 {
+  margin-bottom: 30px;
+}
 .test-container {
   position: relative;
   margin: 1rem;
@@ -473,17 +476,20 @@ button[disabled="true"] img {
 @media (max-width: 768px) {
   #about,
   #impact,
-  #testimonials,
   #mag,
   #join-us,
   #innovation {
     margin: 40px 0;
+  }
+  #testimonials {
+    margin-bottom: 80px;
   }
   nav a {
     padding: 0 25px;
   }
   .test-container {
     width: 75%;
+    height: 400px;
   }
   .mags-container {
     width: 85%;
@@ -584,13 +590,9 @@ button[disabled="true"] img {
   }
   .test-container {
     width: 85%;
+    height: 450px;
   }
-  .left-testm {
-    left: 4%;
-  }
-  .right-testm {
-    right: 3%;
-  }
+
   #mag {
     width: 100%;
   }
