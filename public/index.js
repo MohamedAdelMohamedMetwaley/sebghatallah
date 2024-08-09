@@ -54,12 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
   rightButton.addEventListener("click", () =>
     rightScroll(scrollImages, scrollImages.clientWidth + 20)
   );
-  leftTestm.addEventListener("click", () =>
-    scrollTestm("left", testmCards, currentTestm)
-  );
-  rightTestm.addEventListener("click", () =>
-    scrollTestm("right", testmCards, currentTestm)
-  );
+  leftTestm.addEventListener("click", () => scrollTestm("left", testmCards));
+  rightTestm.addEventListener("click", () => scrollTestm("right", testmCards));
 
   function leftScroll(scroller, speed) {
     scroller.scrollBy({
@@ -75,16 +71,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  function scrollTestm(direction, testmArr, currentIndex) {
-    console.log(direction, testmArr, currentIndex);
-    if (direction === "left" && currentIndex !== testmArr.length - 1) {
-      testmArr[currentIndex].classList.remove("active");
-      testmArr[currentIndex + 1].classList.add("active");
-      currentTestm++;
-    } else if (direction === "right" && currentIndex !== 0) {
-      testmArr[currentIndex].classList.remove("active");
-      testmArr[currentIndex - 1].classList.add("active");
-      currentTestm--;
+  function scrollTestm(direction, testmArr) {
+    console.log(direction, testmArr, currentTestm);
+    if (direction === "left") {
+      testmArr[currentTestm].classList.remove("active");
+      if (currentTestm === testmArr.length - 1) currentTestm = -1;
+      testmArr[++currentTestm].classList.add("active");
+    } else if (direction === "right") {
+      testmArr[currentTestm].classList.remove("active");
+      if (currentTestm === 0) currentTestm = testmArr.length;
+      testmArr[--currentTestm].classList.add("active");
     }
   }
 
